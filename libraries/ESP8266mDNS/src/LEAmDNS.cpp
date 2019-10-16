@@ -896,6 +896,14 @@ uint16_t MDNSResponder::answerPort(const uint32_t p_u32AnswerIndex)
 }
 
 /*
+ * MDNSResponder::serviceDomain (LEGACY)
+ */
+String MDNSResponder::serviceDomain(const uint32_t p_u32AnswerIndex) {
+    const stcMDNSServiceQuery*              pServiceQuery = _findLegacyServiceQuery();
+    return String(answerServiceDomain(pServiceQuery, p_u32AnswerIndex));
+}
+
+/*
     MDNSResponder::hostname (LEGACY)
 */
 String MDNSResponder::hostname(const uint32_t p_u32AnswerIndex)

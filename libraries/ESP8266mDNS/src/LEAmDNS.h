@@ -338,6 +338,7 @@ public:
     IPAddress answerIP(const uint32_t p_u32AnswerIndex);
     uint16_t answerPort(const uint32_t p_u32AnswerIndex);
     // for compatibility...
+    String serviceDomain(const uint32_t p_u32AnswerIndex);
     String hostname(const uint32_t p_u32AnswerIndex);
     IPAddress IP(const uint32_t p_u32AnswerIndex);
     uint16_t port(const uint32_t p_u32AnswerIndex);
